@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Katalog produk Susu Murni Nasional — berbagai pilihan susu segar dan pasteurisasi."
+  >
+
+  <title>Produk | Susu Murni Nasional</title>
+
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- CSS UTAMA -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+
+  <style>
+
+    /* ==================================================
+       HALAMAN PRODUK
+    ================================================== */
+
+    .product-page {
+
+      background: #f5f9ff;
+
+    }
+
+
+    /* ==================================================
+       HERO PRODUK
+    ================================================== */
+
+    .product-page-hero {
+
+      position: relative;
+
+      min-height: 430px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          rgba(14,60,130,0.72),
+          rgba(14,60,130,0.60)
+        ),
+        url("assets/website/stall-bg.png");
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+
+    .product-page-hero-content {
+
+      max-width: 800px;
+
+      padding: 50px 25px;
+
+      color: white;
+
+    }
+
+
+    .product-page-hero-content span {
+
+      display: inline-block;
+
+      margin-bottom: 15px;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .product-page-hero-content h1 {
+
+      margin: 0 0 18px;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: clamp(38px, 6vw, 65px);
+
+      line-height: 1.05;
+
+      color: white;
+
+    }
+
+
+    .product-page-hero-content p {
+
+      max-width: 650px;
+
+      margin: auto;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+
+      color: rgba(255,255,255,0.92);
+
+    }
+
+
+    /* ==================================================
+       INTRO
+    ================================================== */
+
+    .product-intro {
+
+      max-width: 800px;
+
+      margin: auto;
+
+      padding: 75px 6% 35px;
+
+      text-align: center;
+
+    }
+
+
+    .product-intro span {
+
+      color: #2f78c4;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .product-intro h2 {
+
+      margin: 12px 0 15px;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: clamp(28px, 4vw, 42px);
+
+      line-height: 1.2;
+
+      color: #0f2f5c;
+
+    }
+
+
+    .product-intro p {
+
+      margin: auto;
+
+      max-width: 650px;
+
+      color: #5b6b82;
+
+      font-size: 15px;
+
+      line-height: 1.8;
+
+    }
+
+
+    /* ==================================================
+       FILTER
+    ================================================== */
+
+    .product-catalog {
+
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 30px 6% 90px;
+
+    }
+
+
+    .product-filter {
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-bottom: 45px;
+
+    }
+
+
+    .product-filter button {
+
+      border: 1px solid #d5e3f6;
+
+      background: white;
+
+      color: #1553a8;
+
+      padding: 11px 19px;
+
+      border-radius: 50px;
+
+      font-family: "DM Sans", sans-serif;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition: .3s;
+
+    }
+
+
+    .product-filter button:hover {
+
+      border-color: #1553a8;
+
+      transform: translateY(-2px);
+
+    }
+
+
+    .product-filter button.active {
+
+      background: #1553a8;
+
+      color: white;
+
+      border-color: #1553a8;
+
+    }
+
+
+    /* ==================================================
+       GRID
+    ================================================== */
+
+    .catalog-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 26px;
+
+    }
+
+
+    /* ==================================================
+       PRODUCT CARD
+    ================================================== */
+
+    .catalog-card {
+
+      background: white;
+
+      border: 1px solid #e3ecf8;
+
+      border-radius: 22px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 8px 25px rgba(15,60,130,0.06);
+
+      transition: .3s;
+
+    }
+
+
+    .catalog-card:hover {
+
+      transform: translateY(-7px);
+
+      box-shadow:
+        0 15px 35px rgba(15,60,130,0.12);
+
+    }
+
+
+    .catalog-img {
+
+      height: 270px;
+
+      background: #eaf2fc;
+
+      overflow: hidden;
+
+    }
+
+
+    .catalog-img img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+
+      transition: .4s;
+
+    }
+
+
+    .catalog-card:hover .catalog-img img {
+
+      transform: scale(1.06);
+
+    }
+
+
+    .catalog-body {
+
+      padding: 23px;
+
+    }
+
+
+    .catalog-label {
+
+      display: inline-block;
+
+      padding: 6px 11px;
+
+      background: #e6f0fc;
+
+      color: #1553a8;
+
+      border-radius: 30px;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      letter-spacing: .7px;
+
+    }
+
+
+    .catalog-body h3 {
+
+      margin: 14px 0 9px;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: 20px;
+
+      line-height: 1.25;
+
+      color: #0f2f5c;
+
+    }
+
+
+    .catalog-body p {
+
+      min-height: 65px;
+
+      margin: 0;
+
+      color: #5b6b82;
+
+      font-size: 14px;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* ==================================================
+       PRICE
+    ================================================== */
+
+    .catalog-price {
+
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin: 18px 0;
+
+    }
+
+
+    .catalog-price del {
+
+      color: #9aa8bb;
+
+      font-size: 13px;
+
+    }
+
+
+    .catalog-price strong {
+
+      color: #1553a8;
+
+      font-size: 21px;
+
+      font-weight: 800;
+
+    }
+
+
+    .catalog-price em {
+
+      background: #e3efff;
+
+      color: #1553a8;
+
+      padding: 5px 8px;
+
+      border-radius: 20px;
+
+      font-size: 10px;
+
+      font-style: normal;
+
+      font-weight: 700;
+
+    }
+
+
+    /* ==================================================
+       BUTTON
+    ================================================== */
+
+    .catalog-cart-btn {
+
+      width: 100%;
+
+      border: none;
+
+      background: #1553a8;
+
+      color: white;
+
+      padding: 13px 15px;
+
+      border-radius: 12px;
+
+      font-family: "DM Sans", sans-serif;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition: .3s;
+
+    }
+
+
+    .catalog-cart-btn:hover {
+
+      background: #0e3f82;
+
+      transform: translateY(-2px);
+
+    }
+
+
+    /* ==================================================
+       INFO PEMESANAN
+    ================================================== */
+
+    .product-info {
+
+      max-width: 1100px;
+
+      margin: 0 auto 80px;
+
+      padding: 0 6%;
+
+    }
+
+
+    .product-info-box {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+
+      padding: 35px;
+
+      background: #e9f2fd;
+
+      border-radius: 24px;
+
+    }
+
+
+    .product-info-item {
+
+      padding: 10px;
+
+    }
+
+
+    .product-info-item span {
+
+      display: block;
+
+      margin-bottom: 10px;
+
+      font-size: 25px;
+
+    }
+
+
+    .product-info-item strong {
+
+      display: block;
+
+      margin-bottom: 7px;
+
+      color: #0f2f5c;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: 16px;
+
+    }
+
+
+    .product-info-item p {
+
+      margin: 0;
+
+      color: #5b6b82;
+
+      font-size: 13px;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* ==================================================
+       CTA
+    ================================================== */
+
+    .product-final-cta {
+
+      max-width: 1100px;
+
+      min-height: 310px;
+
+      margin: 0 auto 90px;
+
+      padding: 50px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      border-radius: 28px;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          rgba(14,60,130,.86),
+          rgba(14,60,130,.86)
+        ),
+        url("Produk akhir.png");
+
+      background-size: cover;
+
+      background-position: center;
+
+      color: white;
+
+    }
+
+
+    .product-final-cta-content {
+
+      max-width: 700px;
+
+    }
+
+
+    .product-final-cta-content span {
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .product-final-cta-content h2 {
+
+      margin: 12px 0;
+
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-size: clamp(28px, 4vw, 43px);
+
+      line-height: 1.15;
+
+      color: white;
+
+    }
+
+
+    .product-final-cta-content p {
+
+      margin: 0;
+
+      line-height: 1.7;
+
+      color: rgba(255,255,255,.88);
+
+    }
+
+
+    .product-wa-btn {
+
+      display: inline-block;
+
+      margin-top: 24px;
+
+      padding: 13px 25px;
+
+      border-radius: 30px;
+
+      background: white;
+
+      color: #1553a8;
+
+      font-weight: 700;
+
+      transition: .3s;
+
+    }
+
+
+    .product-wa-btn:hover {
+
+      transform: translateY(-3px);
+
+    }
+
+
+    /* ==================================================
+       RESPONSIVE
+    ================================================== */
+
+    @media (max-width: 900px) {
+
+      .catalog-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .product-info-box {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .product-page-hero {
+
+        min-height: 400px;
+
+      }
+
+      .product-page-hero-content h1 {
+
+        font-size: 42px;
+
+      }
+
+      .catalog-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .product-info-box {
+
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+
+      }
+
+      .product-final-cta {
+
+        margin-left: 5%;
+
+        margin-right: 5%;
+
+        padding: 35px 22px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="site-header">
+
+
+  <a
+    class="brand"
+    href="index.html">
+
+    <img
+      src="https://susunasional.com/wp-content/uploads/2026/08/Susu-Murni-Nasional-2-1024x669.webp"
+      alt="Logo Susu Murni Nasional"
+      class="brand-logo-img">
+
+  </a>
+
+
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button">
+
+    ☰
+
+  </button>
+
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a class="active" href="produk.html">Produk</a>
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Menu Lain <span>▾</span></button>
+      <div class="nav-dropdown-menu">
+<a href="anggota.html">Anggota Kelompok</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <button
+    class="cart-button"
+    id="cartButton"
+    type="button">
+
+    🛒
+
+    <span>
+      Keranjang
+    </span>
+
+    <b id="cartCount">
+      0
+    </b>
+
+  </button>
+
+
+  <a
+    class="header-order"
+    href="https://wa.me/6281808119116?text=Halo%20Susu%20Murni%20Nasional%20Official%2C%20saya%20ingin%20pesan."
+    target="_blank">
+
+    Pesan Sekarang
+
+  </a>
+
+</header>
+
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<main class="product-page">
+
+
+  <!-- ==================================================
+       HERO
+  ================================================== -->
+
+  <section class="product-page-hero">
+
+
+    <div class="product-page-hero-content">
+
+      <span>
+        KATALOG SUSU MURNI NASIONAL
+      </span>
+
+
+      <h1>
+        Temukan Susu Favoritmu
+        <br>
+        Segar, Sehat dan Siap Menemani Harimu
+      </h1>
+
+
+      <p>
+        Jelajahi berbagai pilihan Susu Murni Nasional, mulai dari susu cup, mini pack, medium pack, hingga yoghurt dengan beragam rasa dan ukuran.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       INTRO
+  ================================================== -->
+
+  <section class="product-intro">
+
+    <span>
+      PILIHAN PRODUK
+    </span>
+
+
+    <h2>
+      Mau Susu yang Mana Hari Ini?
+    </h2>
+
+
+    <p>
+    Pilih rasa dan ukuran yang paling sesuai dengan seleramu. Temukan produk favoritmu, lalu masukkan ke keranjang untuk melanjutkan pemesanan.
+    </p>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       KATALOG
+  ================================================== -->
+
+  <section class="product-catalog">
+
+
+    <!-- FILTER -->
+
+    <div class="product-filter">
+
+      <button
+        class="active"
+        data-filter="all">
+
+        Semua Produk
+
+      </button>
+
+
+      <button
+        data-filter="cup">
+
+        Susu Cup
+
+      </button>
+
+
+      <button
+        data-filter="pack-tawar">
+
+        Pack Tawar
+
+      </button>
+
+
+      <button
+        data-filter="medium-pack">
+
+        Medium Pack
+
+      </button>
+
+
+      <button
+        data-filter="yoghurt">
+
+        Yoghurt
+
+      </button>
+
+
+      <button
+        data-filter="mini-pack">
+
+        Susu Mini Pack
+
+      </button>
+
+    </div>
+
+
+
+    <!-- GRID PRODUK -->
+
+    <div
+      class="catalog-grid"
+      id="catalogGrid">
+
+
+
+      <!-- =========================================
+           1. CUP STROBERI
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="cup">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Cup.png"
+            alt="Susu Cup Stroberi">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            CUP 130 ML
+          </span>
+
+
+          <h3>
+            Susu Cup Stroberi
+          </h3>
+
+
+          <p>
+            Susu murni dengan perpaduan rasa
+            stroberi yang manis dan menyegarkan.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Cup Stroberi (130 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           2. CUP COKELAT
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="cup">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Cup.png"
+            alt="Susu Cup Cokelat">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            CUP 130 ML
+          </span>
+
+
+          <h3>
+            Susu Cup Cokelat
+          </h3>
+
+
+          <p>
+            Kelembutan susu murni dipadukan dengan
+            rasa cokelat creamy yang lezat.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Cup Cokelat (130 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           3. CUP MOKA
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="cup">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Cup.png"
+            alt="Susu Cup Moka">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            CUP 130 ML
+          </span>
+
+
+          <h3>
+            Susu Cup Moka
+          </h3>
+
+
+          <p>
+            Perpaduan susu pasteurisasi dengan
+            aroma moka yang khas dan nikmat.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Cup Moka (130 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           4. CUP JERUK
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="cup">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Cup.png"
+            alt="Susu Cup Jeruk">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            CUP 130 ML
+          </span>
+
+
+          <h3>
+            Susu Cup Jeruk
+          </h3>
+
+
+          <p>
+            Kesegaran rasa jeruk yang berpadu
+            dengan susu murni yang lembut.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Cup Jeruk (130 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =========================================
+           11. CUP VANILLA
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="cup">
+
+        <div class="catalog-img">
+          <img
+            src="cup vanila.jpeg"
+            alt="Susu Cup Vanilla Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            CUP 130 ML
+          </span>
+
+          <h3>
+            Susu Cup Vanilla Nasional
+          </h3>
+
+          <p>
+            Susu pasteurisasi rasa vanilla dengan
+            rasa lembut, manis, dan nikmat.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp7.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="7000"
+            data-product-name="Susu Cup Vanilla Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+
+      <!-- =========================================
+           5. PACK TAWAR
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="pack-tawar">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Bantal.png"
+            alt="Susu Pack Tawar">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            PACK 150 ML
+          </span>
+
+
+          <h3>
+            Susu Pack Tawar
+          </h3>
+
+
+          <p>
+            Susu murni 100% tanpa pemanis
+            buatan, cocok untuk kebutuhan
+            nutrisi harian.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp10.000
+            </del>
+
+            <strong>
+              Rp7.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="7000"
+            data-product-name="Susu Pack Tawar (150 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           6. MEDIUM STRAWBERRY
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="medium-pack">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Medium .png"
+            alt="Susu Medium Pack Strawberry">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            MEDIUM 150 ML
+          </span>
+
+
+          <h3>
+            Medium Pack Stroberi
+          </h3>
+
+
+          <p>
+            Rasa stroberi manis dan segar
+            dalam kemasan medium yang praktis.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Medium Pack Strawberry (150 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           7. MEDIUM MELON
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="medium-pack">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Medium .png"
+            alt="Susu Medium Pack Melon">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            MEDIUM 150 ML
+          </span>
+
+
+          <h3>
+            Medium Pack Putih Manis
+          </h3>
+
+
+          <p>
+            Sensasi manis yang
+            menyegarkan dan cocok diminum kapan saja.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Medium Pack Melon (150 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           8. MEDIUM JERUK
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="medium-pack">
+
+
+        <div class="catalog-img">
+
+          <img
+            src="Susu Medium .png"
+            alt="Susu Medium Pack Jeruk">
+
+        </div>
+
+
+        <div class="catalog-body">
+
+          <span class="catalog-label">
+            MEDIUM 150 ML
+          </span>
+
+
+          <h3>
+            Medium Pack Coklat
+          </h3>
+
+
+          <p>
+            Rasa coklat yang segar dipadukan
+            dengan lembutnya susu pasteurisasi.
+          </p>
+
+
+          <div class="catalog-price">
+
+            <del>
+              Rp6.000
+            </del>
+
+            <strong>
+              Rp4.000
+            </strong>
+
+            <em>
+              Diskon 33%
+            </em>
+
+          </div>
+
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="4000"
+            data-product-name="Susu Medium Pack Jeruk (150 ml)">
+
+            Tambah ke Keranjang 🛒
+
+          </button>
+
+        </div>
+
+      </article>
+
+            <!-- =========================================
+           10. SUSU MINI PACK
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="mini-pack">
+
+        <div class="catalog-img">
+          <img
+            src="mini.jpeg"
+            alt="Susu Mini Pack Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            MINI 80 ML
+          </span>
+
+          <h3>
+            Susu Mini <b>Stroberi</b>
+          </h3>
+
+          <p>
+            Kemasan susu mini yang praktis dengan
+            pilihan rasa <b>Stroberi</b>       </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp2.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="2000"
+            data-product-name="Susu Mini Pack Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+      <!-- =========================================
+           10. SUSU MINI PACK
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="mini-pack">
+
+        <div class="catalog-img">
+          <img
+            src="mini.jpeg"
+            alt="Susu Mini Pack Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            MINI 80 ML
+          </span>
+
+          <h3>
+            Susu Mini <b>Coklat</b>
+          </h3>
+
+          <p>
+            Kemasan susu mini yang praktis dengan
+            pilihan rasa <b>Coklat</b>
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp2.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="2000"
+            data-product-name="Susu Mini Pack Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+
+      <!-- =========================================
+           10. SUSU MINI PACK
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="mini-pack">
+
+        <div class="catalog-img">
+          <img
+            src="mini.jpeg"
+            alt="Susu Mini Pack Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            MINI 80 ML
+          </span>
+
+          <h3>
+            Susu Mini <b>Putih Manis</b>
+          </h3>
+
+          <p>
+            Kemasan susu mini yang praktis dengan
+            pilihan rasa <b>Putih Manis</b>
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp2.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="2000"
+            data-product-name="Susu Mini Pack Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+
+      <!-- =========================================
+           12. YOGHURT CUP
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="yoghurt">
+
+        <div class="catalog-img">
+          <img
+            src="yougurt cup.jpeg"
+            alt="Yoghurt Cup Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            YOGHURT CUP 130 ML
+          </span>
+
+          <h3>
+            Yoghurt Cup Anggur
+          </h3>
+
+          <p>
+            Yoghurt cup dengan pilihan rasa mangga, stoberi dan
+            <b>anggur</b> yang menyegarkan.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp5.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="5000"
+            data-product-name="Yoghurt Cup Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+      
+      <!-- =========================================
+           12. YOGHURT CUP
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="yoghurt">
+
+        <div class="catalog-img">
+          <img
+            src="yougurt cup.jpeg"
+            alt="Yoghurt Cup Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            YOGHURT CUP 130 ML
+          </span>
+
+          <h3>
+            Yoghurt Cup Stroberi
+          </h3>
+
+          <p>
+           Yoghurt cup dengan pilihan rasa mangga, <b>stoberi</b> dan
+            anggur yang menyegarkan.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp5.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="5000"
+            data-product-name="Yoghurt Cup Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+
+      <!-- =========================================
+           12. YOGHURT CUP
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="yoghurt">
+
+        <div class="catalog-img">
+          <img
+            src="yougurt cup.jpeg"
+            alt="Yoghurt Cup Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            YOGHURT CUP 130 ML
+          </span>
+
+          <h3>
+            Yoghurt Cup Vanilla
+          </h3>
+
+          <p>
+           Yoghurt cup dengan pilihan rasa <b>mangga</b>, stoberi dan
+            anggur yang menyegarkan.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp5.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="5000"
+            data-product-name="Yoghurt Cup Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+
+      <!-- =========================================
+           9. YOGHURT BOTOL
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="yoghurt">
+
+        <div class="catalog-img">
+          <img
+            src="yougurt botol.jpeg"
+            alt="Yoghurt Botol Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            YOGHURT BOTOL 250 ML
+          </span>
+
+          <h3>
+            Yoghurt Botol Stroberi
+          </h3>
+
+          <p>
+            Yoghurt botol dengan pilihan rasa <b>stroberi</b> yang segar dan nikmat.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp8.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="8000"
+            data-product-name="Yoghurt Botol Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article> 
+  
+      <!-- =========================================
+           9. YOGHURT BOTOL
+      ========================================== -->
+
+      <article
+        class="catalog-card"
+        data-category="yoghurt">
+
+        <div class="catalog-img">
+          <img
+            src="yougurt botol.jpeg"
+            alt="Yoghurt Botol Nasional">
+        </div>
+
+        <div class="catalog-body">
+          <span class="catalog-label">
+            YOGHURT BOTOL 250 ML
+          </span>
+
+          <h3>
+            Yoghurt Botol Original
+          </h3>
+
+          <p>
+            Yoghurt botol dengan pilihan rasa <b>original</b>           dan stroberi yang segar dan nikmat.
+          </p>
+
+          <div class="catalog-price">
+            <strong>
+              Rp8.000
+            </strong>
+            <em>
+              Harga Katalog
+            </em>
+          </div>
+
+          <button
+            class="catalog-cart-btn add-to-cart"
+            type="button"
+            data-product-price="8000"
+            data-product-name="Yoghurt Botol Nasional">
+            Tambah ke Keranjang 🛒
+          </button>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       INFO
+  ================================================== -->
+
+  <section class="product-info">
+
+
+    <div class="product-info-box">
+
+
+      <div class="product-info-item">
+
+        <span>
+          🥛
+        </span>
+
+        <strong>
+          Berbagai Pilihan
+        </strong>
+
+        <p>
+          Tersedia susu cup, susu mini pack,
+          pack, medium pack, dan yoghurt
+          dengan beberapa pilihan rasa.
+        </p>
+
+      </div>
+
+
+      <div class="product-info-item">
+
+        <span>
+          🛒
+        </span>
+
+        <strong>
+          Mudah Dipesan
+        </strong>
+
+        <p>
+          Pilih produk dan masukkan
+          ke keranjang sebelum melakukan
+          checkout.
+        </p>
+
+      </div>
+
+
+      <div class="product-info-item">
+
+        <span>
+          💬
+        </span>
+
+        <strong>
+          Checkout WhatsApp
+        </strong>
+
+        <p>
+          Detail pesanan akan diteruskan
+          melalui WhatsApp Susu Murni Nasional.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       CTA
+  ================================================== -->
+
+  <section class="product-final-cta">
+
+
+    <div class="product-final-cta-content">
+
+      <span>
+        SEGAR • SEHAT • BERGIZI
+      </span>
+
+
+      <h2>
+        Sudah menemukan susu favoritmu?
+      </h2>
+
+
+      <p>
+        Pilih produk favoritmu, masukkan ke keranjang, lalu checkout melalui WhatsApp untuk melakukan konfirmasi pesanan.
+      </p>
+
+
+      <a
+        class="product-wa-btn"
+        href="https://wa.me/6281808119116?text=Halo%20Susu%20Murni%20Nasional%20Official%2C%20saya%20ingin%20memesan%20produk."
+        target="_blank">
+
+       Pesan Varian Favoritmu →
+      </a>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     KERANJANG
+================================================== -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+
+  <div class="cart-head">
+
+    <div>
+      <span>KERANJANG</span>
+      <h3>Pesanan Kamu</h3>
+    </div>
+
+    <button id="closeCart" type="button" aria-label="Tutup keranjang">
+      ×
+    </button>
+
+  </div>
+
+  <div class="cart-items" id="cartItems">
+
+    <div class="cart-empty">
+
+      Keranjang masih kosong.
+
+      <br>
+
+      <small>
+        Pilih varian susu yang kamu suka
+        dari katalog.
+      </small>
+
+    </div>
+
+  </div>
+
+  <div class="cart-foot">
+
+    <div class="cart-total">
+
+      <span>Total</span>
+
+      <b id="cartTotal">Rp0</b>
+
+    </div>
+
+    <button
+      class="btn primary cart-checkout"
+      id="checkoutCart"
+      type="button"
+      disabled>
+
+      Checkout via WhatsApp →
+
+    </button>
+
+    <small>
+      Pesanan akan dikirim ke
+      WhatsApp Susu Murni Nasional.
+    </small>
+
+  </div>
+
+</aside>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+  <div class="footer-content five">
+    <div class="footer-column footer-about">
+      <h3>Susu Murni Nasional</h3>
+      <p>Susu segar dan berkualitas untuk keluarga Indonesia.</p>
+      <p>Segar, sehat, dan bergizi untuk menemani aktivitas setiap hari.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Navigasi</h4>
+      <a href="index.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-column">
+      <h4>Menu Lain</h4>
+      <a href="contact.html#media-sosial">Instagram & TikTok</a>
+      <a href="anggota.html">Anggota Kelompok</a>
+    </div>
+    <div class="footer-column">
+      <h4>Produk</h4>
+      <a href="produk.html">Susu Cup</a>
+      <a href="produk.html">Susu Pack</a>
+      <a href="produk.html">Susu Pasteurisasi</a>
+      <a href="produk.html">Semua Produk</a>
+    </div>
+    <div class="footer-column">
+      <h4>Hubungi Kami</h4>
+      <p>WhatsApp Official</p>
+      <a href="https://wa.me/6281808119116" target="_blank">+62 818-0811-9116</a>
+      <p>Desa Sumogawe, Kecamatan Getasan, Kabupaten Semarang, Jawa Tengah.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Susu Murni Nasional. All Rights Reserved.</p>
+    <p>Segar • Sehat • Bergizi</p>
+  </div>
+</footer>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+
+/* ==================================================
+   FILTER PRODUK
+================================================== */
+
+const productFilters =
+  document.querySelectorAll(
+    ".product-filter button"
+  );
+
+
+const catalogCards =
+  document.querySelectorAll(
+    ".catalog-card"
+  );
+
+
+productFilters.forEach(function(button) {
+
+
+  button.addEventListener(
+    "click",
+    function() {
+
+
+      const filter =
+        this.getAttribute(
+          "data-filter"
+        );
+
+
+      productFilters.forEach(
+        function(btn) {
+
+          btn.classList.remove(
+            "active"
+          );
+
+        }
+      );
+
+
+      this.classList.add(
+        "active"
+      );
+
+
+      catalogCards.forEach(
+        function(card) {
+
+
+          const category =
+            card.getAttribute(
+              "data-category"
+            );
+
+
+          if (
+            filter === "all" ||
+            filter === category
+          ) {
+
+            card.style.display =
+              "block";
+
+          } else {
+
+            card.style.display =
+              "none";
+
+          }
+
+
+        }
+      );
+
+
+    }
+  );
+
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anggota kelompok pengembang website Susu Murni Nasional.">
+  <title>Anggota Kelompok | Susu Murni Nasional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="https://susunasional.com/wp-content/uploads/2026/08/Susu-Murni-Nasional-2-1024x669.webp" alt="Logo Susu Murni Nasional" class="brand-logo-img">
+  </a>
+  <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="produk.html">Produk</a>
+    <a href="about.html">About Us</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle active-parent" type="button" aria-expanded="false">Menu Lain <span>▾</span></button>
+      <div class="nav-dropdown-menu">
+<a class="active" href="anggota.html">Team Kami</a>
+      </div>
+    </div>
+  </nav>
+  <button class="cart-button" id="cartButton" type="button">
+    🛒 <span>Keranjang</span> <b id="cartCount">0</b>
+  </button>
+  <a class="header-order" href="https://wa.me/6281808119116?text=Halo%20Susu%20Murni%20Nasional%20Official%2C%20saya%20ingin%20pesan." target="_blank">Pesan Sekarang</a>
+</header>
+
+<main class="product-page">
+  <section class="product-page-hero">
+    <div class="product-page-hero-content">
+      <span>TIM KAMI</span>
+      <h1>Anggota Kelompok 8</h1>
+      <p>Sumber Daya Manusia di balik website Susu Murni Nasional.</p>
+    </div>
+  </section>
+
+  <section class="product-intro">
+    <span>KENALI KAMI</span>
+    <h2>Tim Pengembang Website</h2>
+  </section>
+
+  <section class="product-catalog">
+    <div class="catalog-grid">
+      <!-- ANGGOTA 1: ganti nama, peran, NIM, dan file foto -->
+        <article class="catalog-card member-card">
+        <div class="catalog-img"><img src="fadzli.jpeg" alt="Nama Anggota 1"></div>
+        <div class="catalog-body">
+          <span class="catalog-label">ANGGOTA 1</span>
+          <h3>Faisal Akbar</h3>
+          <div class="member-role">Ketua</div>
+          <div class="member-meta"><span>NIM: 25081494322</span><span>2025G / Bisnis Digital</span></div>
+        </div>
+      </article>
+
+
+      <!-- ANGGOTA 2: ganti nama, peran, NIM, dan file foto -->
+             <article class="catalog-card member-card">
+        <div class="catalog-img"><img src="Denia.jpeg" alt="Nama Anggota 2"></div>
+        <div class="catalog-body">
+          <span class="catalog-label">ANGGOTA 2</span>
+          <h3>Denia Sofy Ramadhani</h3>
+          <div class="member-role">Desainer Website</div>
+          <div class="member-meta"><span>NIM: 25081494060</span><span>2025G / Bisnis Digital</span></div>
+        </div>
+      </article>
+  
+      <!-- ANGGOTA 3: ganti nama, peran, NIM, dan file foto -->
+      <article class="catalog-card member-card">
+        <div class="catalog-img"><img src="faisal.jpeg" alt="Nama Anggota 3"></div>
+        <div class="catalog-body">
+          <span class="catalog-label">ANGGOTA 3</span>
+          <h3>Muhammad Fadzli</h3>
+          <div class="member-role">Marketing Analisa</div>
+          <div class="member-meta"><span>NIM: 25081494141</span><span>2025G / Bisnis Digital</span></div>
+        </div>
+      </article>
+
+      <!-- ANGGOTA 4: ganti nama, peran, NIM, dan file foto -->
+      <article class="catalog-card member-card">
+        <div class="catalog-img"><img src="Khansa.jpeg" alt="Nama Anggota 4"></div>
+        <div class="catalog-body">
+          <span class="catalog-label">ANGGOTA 4</span>
+          <h3>Nama Anggota 4</h3>
+          <div class="member-role">Copy Writing</div>
+          <div class="member-meta"><span>NIM: 25081494295</span><span>2025G / Bisnis Digital</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- ================= KERANJANG ================= -->
+
+<div
+  class="cart-overlay"
+  id="cartOverlay">
+</div>
+
+
+<aside
+  class="cart-drawer"
+  id="cartDrawer">
+
+
+  <div class="cart-head">
+
+    <div>
+
+      <span>
+        KERANJANG
+      </span>
+
+      <h3>
+        Pesanan Kamu
+      </h3>
+
+    </div>
+
+
+    <button
+      id="closeCart"
+      type="button">
+
+      ×
+
+    </button>
+
+  </div>
+
+
+  <div
+    class="cart-items"
+    id="cartItems">
+
+    <div class="cart-empty">
+
+      Keranjang masih kosong.
+
+      <br>
+
+      <small>
+        Pilih varian susu yang kamu suka
+        dari katalog.
+      </small>
+
+    </div>
+
+  </div>
+
+
+  <div class="cart-foot">
+
+    <div class="cart-total">
+
+      <span>
+        Total
+      </span>
+
+      <b id="cartTotal">
+        Rp0
+      </b>
+
+    </div>
+
+
+    <button
+      class="btn primary cart-checkout"
+      id="checkoutCart"
+      type="button">
+
+      Checkout via WhatsApp →
+
+    </button>
+
+
+    <small>
+      Pesanan akan dikirim ke
+      WhatsApp Susu Murni Nasional.
+    </small>
+
+  </div>
+
+</aside>
+
+<footer class="footer">
+  <div class="footer-content five">
+    <div class="footer-column footer-about">
+      <h3>Susu Murni Nasional</h3>
+      <p>Susu segar dan berkualitas untuk keluarga Indonesia.</p>
+      <p>Segar, sehat, dan bergizi untuk menemani aktivitas setiap hari.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Navigasi</h4>
+      <a href="index.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-column">
+      <h4>Menu Lain</h4>
+      <a href="contact.html#media-sosial">Instagram & TikTok</a>
+      <a href="anggota.html">Anggota Kelompok</a>
+    </div>
+    <div class="footer-column">
+      <h4>Produk</h4>
+      <a href="produk.html">Susu Cup</a>
+      <a href="produk.html">Susu Pack</a>
+      <a href="produk.html">Susu Pasteurisasi</a>
+      <a href="produk.html">Semua Produk</a>
+    </div>
+    <div class="footer-column">
+      <h4>Hubungi Kami</h4>
+      <p>WhatsApp Official</p>
+      <a href="https://wa.me/6281808119116" target="_blank">+62 818-0811-9116</a>
+      <p>Desa Sumogawe, Kecamatan Getasan, Kabupaten Semarang, Jawa Tengah.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Susu Murni Nasional. All Rights Reserved.</p>
+    <p>Segar • Sehat • Bergizi</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
